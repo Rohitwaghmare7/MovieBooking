@@ -1,0 +1,17 @@
+/* Add this to your CSS file or in a styled component */
+.slick-slide {
+    padding: 0 10px;
+  }
+  
+  .slick-dots li button:before {
+    color: black;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    color: black;
+  }
+  
+
+  

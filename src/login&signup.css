@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.gradient-background {
+  background: url("./assets/aavtar.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: rgb(62, 172, 194);
+    background: linear-gradient(
+      90deg,
+      rgba(62, 172, 194, 1) 8%,
+      rgba(61, 143, 202, 1) 27%,
+      rgba(44, 44, 167, 1) 60%,
+      rgba(24, 24, 124, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gradient-custom {
+    background: rgb(62, 172, 194);
+    background: linear-gradient(
+      90deg,
+      rgba(62, 172, 194, 1) 8%,
+      rgba(61, 143, 202, 1) 27%,
+      rgba(44, 44, 167, 1) 60%,
+      rgba(24, 24, 124, 1) 100%
+    );
+  }
+  .bg-gradient-custom:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(62, 172, 194, 1) 8%,
+      rgba(61, 143, 202, 1) 27%,
+      rgba(44, 44, 167, 1) 60%,
+      rgba(24, 24, 124, 1) 80%
+    );
+  }
+
+  .bg-gradient-navbar {
+    background: rgb(114,0,220);
+background: linear-gradient(90deg, rgba(114,0,220,1) 0%, rgba(111,39,188,1) 29%, rgba(39,100,184,1) 69%, rgba(16,159,187,1) 100%);
+  }
+}
