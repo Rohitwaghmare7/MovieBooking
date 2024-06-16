@@ -11,7 +11,7 @@ function ShowtimeSelector() {
   }, []);
 
   const movie = movies.find((movie) => movie.id === parseInt(id));
-  const theaters = movie?.Theater;
+  const theaters = movie?.theaters;
 
   const [selectedTheaterIndex, setSelectedTheaterIndex] = useState(-1);
   const [selectedDateIndex, setSelectedDateIndex] = useState(-1);
