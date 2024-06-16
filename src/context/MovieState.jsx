@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'; // Import PropTypes
 import MovieContext from './movieContext';
 
 const MovieState = (props) => {
-    const host = "http://localhost:5000";
-    // const host = "https://social-media-backend-sand.vercel.app";
+    // const host = "http://localhost:5000";
+    const host = "https://movie-booking-backend-theta.vercel.app";
     
     const MoviesInitial = [];
     const [Movies, setMovies] = useState(MoviesInitial);
