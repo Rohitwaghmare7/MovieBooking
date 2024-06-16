@@ -31,7 +31,7 @@ const SeatSelection = () => {
     console.log(`Converted showtime: ${formattedShowtime}`);
 
     for (let movie of movies) {
-      for (let theater of movie.Theater) {
+      for (let theater of movie.theaters) {
         if (theater.name === theaterName) {
           for (let show of theater.showtimes) {
             if (show.time === formattedShowtime && show.screen === screenName) {
